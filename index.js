@@ -28,8 +28,9 @@ page.open(address, function (status) {
     console.log('Loading time ' + t + ' msec');
     page.render('zybang.png', {
       format: 'png',
-      quality: 100
+      quality: 50
     });
+    console.log('render ended');
     phantom.exit();
   }
 })
